@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "OSU Background",
+  "version": "1.0.0",
+  "description": "Test Extension to add OSU Stuff to pages",
+  "browser_action": {
+          "default_icon": "osu.ico",
+          "default_title": "OSU Stuff",      
+          "default_popup": "popup.html"       
+        }
+}  
