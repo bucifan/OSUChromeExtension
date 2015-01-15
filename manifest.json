@@ -3,8 +3,10 @@
   "name": "OSU Background",
   "version": "1.0.0",
   "description": "Test Extension to add OSU Stuff to pages",
+  "icons":{"16":"osu.png",
+			"128": "osu128.png"},
   "browser_action": {
-          "default_icon": "osu.ico",
+          "default_icon": "osu.png",
           "default_title": "OSU Stuff",      
           "default_popup": "popup.html"       
         }
