@@ -1,0 +1,17 @@
+.popbody{
+	background: url("popback.jpg");
+	width: 490px;
+	height: 320px;	
+}
+.popbody div{
+	text-align: center;
+}
+.newtabbody{
+	width: 100%;
+	height:100%;
+	background-image: url("nationalchamps.jpg");
+	background-size: 100%;	
+}
+.newtab {
+
+}

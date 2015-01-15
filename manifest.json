@@ -9,5 +9,8 @@
           "default_icon": "osu.png",
           "default_title": "OSU Stuff",      
           "default_popup": "popup.html"       
-        }
+        },
+  "chrome_url_overrides":{
+    "newtab":"newtab.html"
+  }      
 }  
