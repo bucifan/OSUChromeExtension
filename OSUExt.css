@@ -13,5 +13,18 @@
 	background-size: 100%;	
 }
 .newtab {
+    color:white;
+}
+.ero {
+    width:100%;
+    padding-top:50px;
+    text-align:center;
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size:25pt;
+    font-weight:bold;
+    color:white;
 
 }
+.ero table {
+    margin:auto;
+    }

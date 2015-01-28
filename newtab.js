@@ -1,1 +1,1 @@
-$(".newtab").html($("window").height());
+//$(".newtab").html($("window").height());
