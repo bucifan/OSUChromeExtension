@@ -28,3 +28,10 @@
 .ero table {
     margin:auto;
     }
+.newQuote {
+    padding-left:15px;
+}
+#QuoteTD {
+    font-size:12pt;
+    color:white;
+}

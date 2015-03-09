@@ -4,6 +4,8 @@ function getQuote() {
         $("#QuoteTD").html("Test " + data.Quote);
     });
 }
+
+var newquote = "<img class='newQuote' src='newq.png' onclick='getQuote1();' />";
 function getQuote1() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "http://bucifanQuotes.azure-mobile.net/api/readquotes", true);
@@ -15,7 +17,7 @@ function getQuote1() {
             var myq2 = myq1.substring(0,myq1.indexOf("Author")-1);
             var auth1 = myq1.substring(myq1.indexOf("Author")+7);
             var auth2 = auth1.substring(0,auth1.indexOf("QuoteID")-1);
-            $("#QuoteTD").html(myq2 + " | " + auth2);
+            $("#QuoteTD").html(myq2 + " | " + auth2 + newquote);
         }
     }
     xhr.send();
