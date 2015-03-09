@@ -4,8 +4,8 @@ function getQuote() {
         $("#QuoteTD").html("Test " + data.Quote);
     });
 }
-
-var newquote = "<img class='newQuote' src='newq.png' onclick='getQuote1();' />";
+var newQimage = chrome.extension.getURL('/newq.png');
+var newquote = "";
 function getQuote1() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "http://bucifanQuotes.azure-mobile.net/api/readquotes", true);
@@ -23,3 +23,5 @@ function getQuote1() {
     xhr.send();
 }
 getQuote1();
+
+$("#getnew").click(function () { getQuote1(); });

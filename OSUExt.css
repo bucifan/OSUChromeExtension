@@ -29,9 +29,15 @@
     margin:auto;
     }
 .newQuote {
-    padding-left:15px;
+    padding-left:12px;
+    vertical-align:central;
 }
 #QuoteTD {
-    font-size:12pt;
+    font-size:16pt;
     color:white;
+    max-width:68%;
+    text-align:center;
 }
+    #QuoteTD span {
+        font-size:12pt;
+    }
