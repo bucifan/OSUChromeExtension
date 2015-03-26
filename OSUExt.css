@@ -17,7 +17,7 @@
 }
 .ero {
     width:100%;
-    padding-top:50px;
+    padding-top:1px;
     text-align:center;
     font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     font-size:25pt;
@@ -39,6 +39,27 @@
     max-width:68%;
     text-align:center;
 }
-    #QuoteTD span {
+#QuoteTD span {
         font-size:12pt;
-    }
+}
+.card {
+        width: 850px;
+        height: 100px;
+        margin: 5px;
+        /*border: 1px #3c3939 solid; */
+      }
+      .flip {
+        display: inline-block;
+      }
+      .front, .back {
+        padding: 10px;
+      }
+      .front {
+           font-size:16pt;
+          color:white;
+       
+      }
+      .back {
+        font-size:16pt;
+          color:white;
+      }
