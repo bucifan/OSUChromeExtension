@@ -42,6 +42,16 @@
 #QuoteTD span {
         font-size:12pt;
 }
+#schedulelink {
+    font-size:16pt;
+    color:white;
+}
+#schedule {
+  height:500px;
+  background-color:white;
+  z-index:50;
+  display:none;
+}
 .card {
         width: 850px;
         height: 100px;
@@ -63,3 +73,5 @@
         font-size:16pt;
           color:white;
       }
+
+

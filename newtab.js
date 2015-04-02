@@ -77,3 +77,8 @@ function flipQuote() {
 }
 $('.wodry').wodry();
 $("#getnew").click(function () { getQuote1(); });
+
+$("#schedulelink").click(function () {
+    $("#schedule").append("<img src='http://www.bucifan.com/img/helmets/illinois1.gif' />")
+    $("#schedule").slideToggle();
+});
