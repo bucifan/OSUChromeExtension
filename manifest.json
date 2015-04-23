@@ -12,7 +12,7 @@
         "default_title": "OSU Stuff",
         "default_popup": "popup.html"
     },
-    "permissions": [ "http://bucifanquotes.azure-mobile.net/"],
+    "permissions": [ "http://bucifanquotes.azure-mobile.net/", "http://bucifanSchedule.azure-mobile.net/"],
   "chrome_url_overrides":{
     "newtab":"newtab.html"
   }      

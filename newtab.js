@@ -78,7 +78,36 @@ function flipQuote() {
 $('.wodry').wodry();
 $("#getnew").click(function () { getQuote1(); });
 
+var haveSchedule = false;
 $("#schedulelink").click(function () {
-    $("#schedule").append("<img src='http://www.bucifan.com/img/helmets/illinois1.gif' />")
-    $("#schedule").slideToggle();
+    if (!haveSchedule) {
+        getSchedule();
+    } else {
+        $("#schedule").slideToggle();
+    }
 });
+
+function getSchedule() {
+   // var xhr = new XMLHttpRequest();
+    // xhr.open("GET", "http://bucifanSchedule.azure-mobile.net/api/footballseason?year=2015", true);
+    var schHTML = "<table ><tr><th colspan='4'> 2015 Schedule</th></tr>";
+    $.getJSON("http://bucifanSchedule.azure-mobile.net/api/footballseason?year=2015", function (data) {
+        for (i = 0; i < data.length;i++) {
+            schHTML += "<tr data-localid='" + i + "' data-serverid='" + data[i].id + "' ><td><img class='editbut' src='" + chrome.extension.getURL('edit.png') + "' data-localid='" + i + "' ></td><td>" + data[i].GameDateTime + "</td><td><img src='http://www.bucifan.com/img/helmets/illinois1.gif' /></td><td>" + data[i].Opponet + "</td><td>" + data[i].Location + "</td></tr>";
+            schHTML += "<tr class='editrow'><td colspan='99'><div class='editrowdiv' data-editdivid='" + i + "' data-servereditid='" + data[i].id + "' ><table><tr><td class='saveedits'  data-localeditid='" + i + "'> save </td><td> Helmet Image: <input type='text' class='editinput'  data-localeditid='" + i + "'/></td></tr></table></div></td></tr>";
+        }
+        $("#schedule").append(schHTML);
+
+        $(".editbut").click(function () {
+            var thisid = $(this).attr("data-localid");
+            alert(thisid);
+            $("[data-editdivid='" + thisid + "']").slideToggle();
+        });
+        haveSchedule = true;
+        $("#schedule").slideToggle();
+    });
+ }
+
+function showedit() {
+    
+}
